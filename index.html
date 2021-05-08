@@ -11,7 +11,11 @@
 
 
 
-
+<link rel="stylesheet" href="css/progres-bar.css">
+    <style>
+    .container { margin:30px auto; max-width:30px;}
+    .mediPlayer { float:left; margin:3px;}
+    </style>
 
    <!-- <link media="all" href="css/autoptimize_5eaa825ed5418fe7c35cba15f004d85e.css" rel="stylesheet"/> -->
 	 <link media="all" href="css/style1.css" rel="stylesheet"/>
@@ -96,6 +100,18 @@
                         <div class="wed_logo_und">23.05.2021</div>
                     </div>
                 </div>
+				<div class="mediPlayer">
+    <audio class="listen" preload="none" data-size="30" src="sounds/a.mp3"></audio>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="js/player.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.mediPlayer').mediaPlayer();
+    });
+</script>
+</div>
+				
+				
                 <div class="wed_top_menu_mobile_link"><i class="ti ti-menu"></i></div>
                 <div class="wed_top_menu_cont">
                     <div class="container">
@@ -1123,9 +1139,7 @@
         </footer>
     </section>
 </div>
-<audio controls autoplay loop hidden>
-    <source src="sounds/sugar.mp3" type="audio/mpeg">
-</audio>
+
 <script>
     /*  */
     var _wpcf7 = {
